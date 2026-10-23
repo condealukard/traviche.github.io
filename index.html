@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Taviche Taquería: tacos de birria, jiva, al pastor y nachos con birria, todos a Bs 8.">
+  <title>Taviche | Tacos con carácter</title>
+  <link rel="icon" type="image/png" href="img/logo-taviche.png">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <!-- PANTALLA DE BIENVENIDA: aparece al abrir la página y permite entrar al sitio -->
+  <section class="welcome-screen" id="welcomeScreen" aria-label="Bienvenida a Taviche">
+    <div class="welcome-glow"></div>
+    <img class="welcome-logo" src="img/logo-taviche.png" alt="Logotipo de Taviche">
+    <p class="welcome-kicker">TAQUERÍA · SABOR AUTÉNTICO</p>
+    <h1>El sabor que<br><span>te encuentra.</span></h1>
+    <p class="welcome-copy">Tortillas calientitas, ingredientes frescos y mucho corazón.</p>
+    <button class="button button-light" id="enterButton">Entrar a Taviche <span aria-hidden="true">↗</span></button>
+    <span class="welcome-bottom">HECHO PARA DISFRUTAR · TARIJA</span>
+  </section>
+
+  <!-- CABECERA: logo, navegación y botón para pedir -->
+  <header class="site-header" id="inicio">
+    <a class="brand" href="#inicio" aria-label="Taviche, ir al inicio">
+      <img src="img/logo-taviche.png" alt="" class="brand-logo">
+      <span>TAVICHE<small>TAQUERÍA</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+      <a href="#menu">Nuestro menú</a>
+      <a href="#nosotros">Nuestra historia</a>
+      <a href="#visitanos">Visítanos</a>
+    </nav>
+    <a class="button button-small" href="#menu">Ver menú <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <!-- HERO: gran imagen de tacos, mensaje principal y llamada a la acción -->
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> BUENOS TACOS, BUENOS MOMENTOS</p>
+        <h2>Un mordisco<br>y <em>cambias de humor.</em></h2>
+        <p>Recetas con carácter, salsas con chispa y sabores preparados al momento.</p>
+        <div class="hero-actions">
+          <a class="button" href="#menu">Explorar menú <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#nosotros">Conoce Taviche <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-note"><span class="note-star">✳</span><span><strong>Fresco, sabroso y sin complicaciones.</strong><br>Tu próximo taco favorito te espera.</span></div>
+      </div>
+      <div class="hero-photo" role="img" aria-label="Tacos de carne asada con cilantro, cebolla y lima">
+        <div class="photo-sticker">¡QUÉ<br>RICO! <span>✳</span></div>
+        <span class="photo-caption">TACOS HECHOS CON GANAS</span>
+      </div>
+      <div class="hero-scroll">DESLIZA PARA DESCUBRIR <span>↓</span></div>
+    </section>
+
+    <section class="favorites section-wrap" id="menu">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow"><span></span> LOS FAVORITOS DE LA CASA</p>
+          <h2>Favoritos de la <em>casa.</em></h2>
+        </div>
+        <span class="menu-tag">TODOS A BS 8</span>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-art">
+            <img src="img/tacos-birria.jpg" alt="Tacos de birria servidos para disfrutar">
+            <span class="product-label">ESPECIALIDAD</span>
+          </div>
+          <div class="product-info">
+            <div>
+              <h3>Tacos de birria</h3>
+              <p>Tacos llenos de sabor, con el toque de la casa.</p>
+            </div>
+            <strong>Bs 8</strong>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-art">
+            <img src="img/tacos-jiva.jpg" alt="Tacos preparados al estilo jiva">
+            <span class="product-label">FAVORITO</span>
+          </div>
+          <div class="product-info">
+            <div>
+              <h3>Tacos de jiva</h3>
+              <p>Una opción con personalidad para probar algo distinto.</p>
+            </div>
+            <strong>Bs 8</strong>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-art">
+            <img src="img/tacos-pastor.jpg" alt="Tacos al pastor con ingredientes frescos">
+            <span class="product-label">CLÁSICO</span>
+          </div>
+          <div class="product-info">
+            <div>
+              <h3>Tacos al pastor</h3>
+              <p>Un clásico taquero con mucho sabor.</p>
+            </div>
+            <strong>Bs 8</strong>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- HISTORIA: bloque de marca para explicar la personalidad del negocio -->
+    <section class="story-section" id="nosotros">
+      <div class="story-image"><img src="img/tacos-hero.png" alt="Tacos recién preparados con ingredientes frescos"></div>
+      <div class="story-copy">
+        <p class="eyebrow"><span></span> MÁS QUE UNA TAQUERÍA</p>
+        <h2>El secreto está<br>en hacerlo <em>con ganas.</em></h2>
+        <p>En Taviche creemos que una buena comida puede convertir cualquier día en uno memorable. Por eso juntamos tortillas calientitas, ingredientes frescos y recetas llenas de personalidad.</p>
+        <a href="#visitanos" class="text-link">Ven a probarlos <span aria-hidden="true">↗</span></a>
+        <div class="handwritten">Con sabor, Taviche <span>♥</span></div>
+      </div>
+    </section>
+
+    <!-- LLAMADA FINAL: invitación a visitar el local -->
+    <section class="visit-section section-wrap" id="visitanos">
+      <div><p class="eyebrow"><span></span> TU MESA TE ESPERA</p><h2>¿Nos vemos<br><em>para unos tacos?</em></h2></div>
+      <div class="visit-details"><p>Ven con hambre. Vete con una sonrisa.</p><p><strong>Horario</strong><br>lunes a sabado · 5:00 a 10:30</p><a class="button" href="https://wa.me/59175136219?text=Hola%20Taviche%2C%20quiero%20hacer%20un%20pedido." target="_blank" rel="noopener">Pedir por WhatsApp ↗</a></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#inicio"><img src="img/logo-taviche.png" alt=""><span>TAVICHE<small>TAQUERÍA</small></span></a>
+    <p>Un taco a la vez. ✳</p>
+    <span>© <span id="year"></span> Taviche · Adalid Navarro Lozano</span>
+  </footer>
+
+  <!-- BOTÓN FLOTANTE: vuelve al inicio al desplazarse por la página -->
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba">↑</button>
+</body>
+</html>
