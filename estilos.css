@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap');
 :root {
   --orange: #f15a24;
@@ -335,7 +336,7 @@ h2 em {
 .hero-photo {
   position: relative;
   min-height: 580px;
-  background: url('../img/tacos-hero.png') center / cover no-repeat;
+  background: url('tacos-hero.png') center / cover no-repeat;
 }
 .hero-photo::after {
   position: absolute;

@@ -1,13 +1,13 @@
 
 document.addEventListener("DOMContentLoaded", () => {
- 
+  
   const welcomeScreen = document.querySelector("#welcomeScreen");
   const enterButton = document.querySelector("#enterButton");
 
   function enterSite() {
     welcomeScreen.classList.add("is-hidden");
     document.body.classList.remove("no-scroll");
-    
+   
     document.querySelector("#inicio").focus?.({ preventScroll: true });
   }
 
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
   document.querySelector("#year").textContent = new Date().getFullYear();
 
- ANIMACIÓN DE ENTRADA
+  
   const revealTargets = document.querySelectorAll(
     ".section-heading, .product-card, .story-copy, .visit-details"
   );
@@ -62,11 +62,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     revealTargets.forEach((element) => observer.observe(element));
   } else {
-    
+   
     revealTargets.forEach((element) => element.classList.add("is-visible"));
   }
 
-//BOTÓN VOLVER ARRIBA
+  
   const backToTop = document.querySelector("#backToTop");
   function updateBackToTop() {
     backToTop.classList.toggle("visible", window.scrollY > 450);
